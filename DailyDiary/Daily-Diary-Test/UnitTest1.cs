@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using Xunit;
-using DailyDiary; // Assuming DailyDiary namespace contains relevant classes and methods
+using DailyDiary; 
 
 namespace Daily_Diary_Test
 {
@@ -19,7 +19,7 @@ namespace Daily_Diary_Test
             using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
-                DailyDiary.DailyDiary.ReadAllTextMethod(filepath); // Adjust this based on your actual implementation
+                DailyDiary.DailyDiary.ReadAllTextMethod(filepath); 
                 var result = sw.ToString().Trim();
 
                 // Assert
@@ -34,7 +34,7 @@ namespace Daily_Diary_Test
             string filepath = Path.Combine(Environment.CurrentDirectory, "dailydiary.txt");
             if (File.Exists(filepath))
             {
-                File.Delete(filepath); // Ensure the file is fresh for each test
+                File.Delete(filepath); 
             }
             DateTime date1 = DateTime.Parse("2024-06-26");
             DateTime date2 = DateTime.Parse("2024-06-27");

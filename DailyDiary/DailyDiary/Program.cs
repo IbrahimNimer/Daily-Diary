@@ -13,6 +13,7 @@ namespace DailyDiary
             while (true)
             {  
 
+
                 Console.WriteLine("\nDaily Diary Menu:");
                 Console.WriteLine("1. Read all entries");
                 Console.WriteLine("2. Add a new entry");

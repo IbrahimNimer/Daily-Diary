@@ -30,6 +30,7 @@ namespace DailyDiary
         public static void ResetDiary(string filepath)
         {
             try
+
             {
                 if (!string.IsNullOrEmpty(originalContentBackup))
                 {
